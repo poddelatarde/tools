@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Hola tools</title>
-	</head>
-	<body class="index">
-
-	</body>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Content tools</title>
+	<link rel="stylesheet" href="src/css/index.css">
+	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,700" rel="stylesheet">
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyDtG_APCeMxxOYnDulKeP6RrRVma-pV1Xk",
+		authDomain: "notes-ce9b5.firebaseapp.com",
+		databaseURL: "https://notes-ce9b5.firebaseio.com",
+		projectId: "notes-ce9b5",
+		storageBucket: "notes-ce9b5.appspot.com",
+		messagingSenderId: "1048366108576"
+	};
+	firebase.initializeApp(config);
+</script>
+</head>
+<body class="index">
+	<main>
+		<h1 light>Content Tools</h1>
+		<a href="#" generators class="option">
+			<i class="material-icons">developer_mode</i>
+		</a>
+		<a href="#" guides class="option">
+			<i class="material-icons">chrome_reader_mode</i>
+		</a>
+		<a href="#" tools class="option">
+			<i class="material-icons">pan_tool</i>
+		</a>
+	</main>
+</body>
 </html>

@@ -1,5 +1,79 @@
 // out: ../index.css
+@import "conf.less";
+@import "kfms.less";
 
 .index {
-	
+	h1 {
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		display: inline-block;
+		text-align: center;
+		transform: translate(-50%, -50%);
+	}
+	.option {
+		display: block;
+		position: fixed;
+		border-radius: 50%;
+		background: lightblue;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		animation: 3s smothBounce cubic-bezier(0.42, 0, 0.54, 1) infinite;
+		i { color: white; }
+		&[generators] {
+			background: -webkit-linear-gradient(71deg, #ffde7b, #FF9800);
+			background: -o-linear-gradient(71deg, #ffde7b, #FF9800);
+			background: linear-gradient(161deg, #ffde7b, #FF9800);
+			left: 60%;
+			top: 55%;
+			width: 100px;
+			height: 100px;
+			i { font-size: 43px; }
+			&::after {
+				animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
+			}
+		}
+		&[guides] {
+			background: -webkit-linear-gradient(71deg, #03A9F4, #ef96e8);
+			background: -o-linear-gradient(71deg, #03A9F4, #ef96e8);
+			background: linear-gradient(161deg, #03A9F4, #ef96e8);
+			left: 31%;
+			top: 52%;
+			width: 80px;
+			height: 80px;
+			animation-delay: 0.3s;
+			i { font-size: 43px; }
+			&::after {
+				animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
+				animation-delay: 0.3s;
+			}
+		}
+		&[tools] {
+			background: -webkit-linear-gradient(341deg, #FF5722, #e91e63);
+			background: -o-linear-gradient(341deg, #FF5722, #e91e63);
+			background: linear-gradient(71deg, #FF5722, #e91e63);
+			left: 42%;
+			top: 59%;
+			width: 90px;
+			height: 90px;
+			animation-delay: 0.5s;
+			i { font-size: 43px; }
+			&::after {
+				animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
+				animation-delay: 0.5s;
+			}
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: -140px;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background: -webkit-linear-gradient(top, black -148%, transparent 45%);
+			transform: inherit;
+		}
+	}
 }

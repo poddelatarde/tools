@@ -1,0 +1,56 @@
+
+@keyframes zoomIn {
+	from {
+		transform: translate(-50%, -50%) scale(0);
+		// opacity: 0;
+	}
+	to {
+		transform: translate(-50%, -50%) scale(1);
+		// opacity: 1;
+	}
+}
+
+@keyframes smothBounce {
+	from {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-25px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes smothBounceShadow {
+	from {
+		transform: translateY(0px) scaleX(1.2);
+		opacity: 0.9;
+		filter: blur(4px);
+	}
+	50% {
+		transform: translateY(25px) scaleX(1.2);
+		opacity: 0.5;
+		filter: blur(8px);
+	}
+	to {
+		transform: translateY(0px) scaleX(1.2);
+		opacity: 0.9;
+		filter: blur(4px);
+	}
+}
+
+@keyframes blurIn {
+	from {
+		filter: blur(10px);
+		opacity: 0;
+	}
+	70% {
+		filter: blur(10px);
+		opacity: 0;
+	}
+	to {
+		filter: blur(00px);
+		opacity: 1;
+	}
+}
