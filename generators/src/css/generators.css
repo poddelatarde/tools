@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+[light] {
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+a,
+button,
+textarea,
+input {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+main {
+  animation: 2s blurIn ease;
+}
+main.outOnFade {
+  opacity: 0;
+  filter: blur(10px);
+  transition: 0.5s opacity ease, 0.5s filter ease;
+}
+@keyframes zoomIn {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes smothBounce {
+  from {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes smothBounceShadow {
+  from {
+    transform: translateY(0px) scaleX(1.2);
+    opacity: 0.9;
+    filter: blur(4px);
+  }
+  50% {
+    transform: translateY(25px) scaleX(1.2);
+    opacity: 0.5;
+    filter: blur(8px);
+  }
+  to {
+    transform: translateY(0px) scaleX(1.2);
+    opacity: 0.9;
+    filter: blur(4px);
+  }
+}
+@keyframes blurIn {
+  from {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  70% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}

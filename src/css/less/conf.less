@@ -26,4 +26,9 @@ a {
 
 main {
 	animation: 2s blurIn ease;
+	&.outOnFade {
+		opacity: 0;
+		filter: blur(10px);
+		transition: 0.5s opacity ease, 0.5s filter ease;
+	}
 }

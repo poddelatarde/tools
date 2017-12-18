@@ -28,6 +28,11 @@ a {
 main {
   animation: 2s blurIn ease;
 }
+main.outOnFade {
+  opacity: 0;
+  filter: blur(10px);
+  transition: 0.5s opacity ease, 0.5s filter ease;
+}
 @keyframes zoomIn {
   from {
     transform: translate(-50%, -50%) scale(0);
@@ -81,10 +86,12 @@ main {
 .index h1 {
   position: fixed;
   left: 50%;
-  top: 50%;
+  font-size: 80px;
+  top: 36%;
   display: inline-block;
   text-align: center;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 .index .option {
   display: block;
@@ -99,7 +106,7 @@ main {
 .index .option i {
   color: white;
 }
-.index .option[generators] {
+.index .option[href=generators] {
   background: -webkit-linear-gradient(71deg, #ffde7b, #FF9800);
   background: -o-linear-gradient(71deg, #ffde7b, #FF9800);
   background: linear-gradient(161deg, #ffde7b, #FF9800);
@@ -108,43 +115,43 @@ main {
   width: 100px;
   height: 100px;
 }
-.index .option[generators] i {
+.index .option[href=generators] i {
   font-size: 43px;
 }
-.index .option[generators]::after {
+.index .option[href=generators]::after {
   animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
 }
-.index .option[guides] {
+.index .option[href=guides] {
   background: -webkit-linear-gradient(71deg, #03A9F4, #ef96e8);
   background: -o-linear-gradient(71deg, #03A9F4, #ef96e8);
   background: linear-gradient(161deg, #03A9F4, #ef96e8);
-  left: 31%;
+  left: 37%;
   top: 52%;
   width: 80px;
   height: 80px;
   animation-delay: 0.3s;
 }
-.index .option[guides] i {
+.index .option[href=guides] i {
   font-size: 43px;
 }
-.index .option[guides]::after {
+.index .option[href=guides]::after {
   animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
   animation-delay: 0.3s;
 }
-.index .option[tools] {
+.index .option[href=libraries] {
   background: -webkit-linear-gradient(341deg, #FF5722, #e91e63);
   background: -o-linear-gradient(341deg, #FF5722, #e91e63);
   background: linear-gradient(71deg, #FF5722, #e91e63);
-  left: 42%;
+  left: 47%;
   top: 59%;
   width: 90px;
   height: 90px;
   animation-delay: 0.5s;
 }
-.index .option[tools] i {
+.index .option[href=libraries] i {
   font-size: 43px;
 }
-.index .option[tools]::after {
+.index .option[href=libraries]::after {
   animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
   animation-delay: 0.5s;
 }

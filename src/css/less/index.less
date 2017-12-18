@@ -6,10 +6,12 @@
 	h1 {
 		position: fixed;
 		left: 50%;
-		top: 50%;
+		font-size: 80px;
+		top: 36%;
 		display: inline-block;
 		text-align: center;
 		transform: translate(-50%, -50%);
+		width: 100%;
 	}
 	.option {
 		display: block;
@@ -21,7 +23,7 @@
 		align-items: center;
 		animation: 3s smothBounce cubic-bezier(0.42, 0, 0.54, 1) infinite;
 		i { color: white; }
-		&[generators] {
+		&[href=generators] {
 			background: -webkit-linear-gradient(71deg, #ffde7b, #FF9800);
 			background: -o-linear-gradient(71deg, #ffde7b, #FF9800);
 			background: linear-gradient(161deg, #ffde7b, #FF9800);
@@ -34,11 +36,11 @@
 				animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
 			}
 		}
-		&[guides] {
+		&[href=guides] {
 			background: -webkit-linear-gradient(71deg, #03A9F4, #ef96e8);
 			background: -o-linear-gradient(71deg, #03A9F4, #ef96e8);
 			background: linear-gradient(161deg, #03A9F4, #ef96e8);
-			left: 31%;
+			left: 37%;
 			top: 52%;
 			width: 80px;
 			height: 80px;
@@ -49,11 +51,11 @@
 				animation-delay: 0.3s;
 			}
 		}
-		&[tools] {
+		&[href=libraries] {
 			background: -webkit-linear-gradient(341deg, #FF5722, #e91e63);
 			background: -o-linear-gradient(341deg, #FF5722, #e91e63);
 			background: linear-gradient(71deg, #FF5722, #e91e63);
-			left: 42%;
+			left: 47%;
 			top: 59%;
 			width: 90px;
 			height: 90px;
