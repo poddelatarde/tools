@@ -26,12 +26,11 @@ a {
   color: inherit;
 }
 main {
-  animation: 2s blurIn ease;
+  animation: 0.7s blurIn ease;
 }
 main.outOnFade {
   opacity: 0;
-  filter: blur(10px);
-  transition: 0.5s opacity ease, 0.5s filter ease;
+  transition: 0.3s opacity ease;
 }
 @keyframes zoomIn {
   from {
@@ -71,15 +70,99 @@ main.outOnFade {
 }
 @keyframes blurIn {
   from {
-    filter: blur(10px);
     opacity: 0;
   }
-  70% {
-    filter: blur(10px);
+  30% {
     opacity: 0;
   }
   to {
-    filter: blur(0px);
     opacity: 1;
   }
+}
+*::selection {
+  background-color: #FFC107;
+  color: white;
+}
+.generators .header-options {
+  display: block;
+  width: 100vw;
+  height: 115px;
+  padding: 40px 99px;
+  color: #FFC107;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.generators .header-options h1 {
+  font-size: 37px;
+  font-weight: 300;
+}
+.generators .header-options > i,
+.generators .header-options > a {
+  margin-left: 30px;
+}
+.generators .header-options > i {
+  opacity: 0.3;
+}
+.generators section {
+  position: relative;
+  height: 450px;
+  width: 100vw;
+  top: 0;
+  background: lightyellow;
+}
+.generators section.snippets-generator [codefield] {
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  width: 50%;
+  height: 100%;
+  border: none;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 20px;
+  font-family: 'Roboto Mono';
+  background-color: white;
+  z-index: 1;
+}
+.generators section.snippets-generator [codefield] * {
+  font-family: 'Roboto Mono' !important;
+  font-weight: normal;
+}
+.generators section.snippets-generator textarea {
+  z-index: 2;
+  opacity: 0.1;
+  outline: none;
+  top: 30%;
+  color: black;
+  background: transparent;
+}
+.generators section.snippets-generator md-screen {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  top: 0;
+  font-size: 17px;
+  font-family: 'Roboto Mono';
+  font-weight: normal;
+  height: 100%;
+  background: lightblue;
+  overflow: auto;
+  padding: 20px;
+}
+.generators section.snippets-generator snippet-settings {
+  top: 0;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+red {
+  color: #ffb300;
+}
+yellow {
+  color: #ff5353;
+}
+purple {
+  color: #42c347;
 }

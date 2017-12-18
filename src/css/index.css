@@ -26,12 +26,11 @@ a {
   color: inherit;
 }
 main {
-  animation: 2s blurIn ease;
+  animation: 0.7s blurIn ease;
 }
 main.outOnFade {
   opacity: 0;
-  filter: blur(10px);
-  transition: 0.5s opacity ease, 0.5s filter ease;
+  transition: 0.5s opacity ease;
 }
 @keyframes zoomIn {
   from {
@@ -71,15 +70,12 @@ main.outOnFade {
 }
 @keyframes blurIn {
   from {
-    filter: blur(10px);
     opacity: 0;
   }
-  70% {
-    filter: blur(10px);
+  30% {
     opacity: 0;
   }
   to {
-    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -136,7 +132,7 @@ main.outOnFade {
 }
 .index .option[href=guides]::after {
   animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
-  animation-delay: 0.3s;
+  animation-delay: 0.15s;
 }
 .index .option[href=libraries] {
   background: -webkit-linear-gradient(341deg, #FF5722, #e91e63);
@@ -153,7 +149,7 @@ main.outOnFade {
 }
 .index .option[href=libraries]::after {
   animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 .index .option::after {
   position: absolute;

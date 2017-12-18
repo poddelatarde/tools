@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			this.$this = this.$this.getAttribute('href')
 			document.querySelector('main').classList.add('outOnFade')
 			setTimeout(() => {
-				window.location.href = `./${this.$this}`
-			}, 500)
+				window.location.href = `./${this.$this}/index.html`
+			}, 300)
 		},
 		bindListeners () {
 			this.anchors.forEach( el => {

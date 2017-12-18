@@ -2,3 +2,87 @@
 
 @import "../../../../src/css/less/conf.less";
 @import "../../../../src/css/less/kfms.less";
+
+*::selection {
+	background-color: #FFC107;
+	color: white;
+}
+
+.generators {
+	.header-options {
+		display: block;
+		width: 100vw;
+		height: 115px;
+		padding: 40px 99px;
+		color: #FFC107;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		h1 {
+			font-size: 37px;
+			font-weight: 300;
+		}
+		>i, >a { margin-left: 30px; }
+		>i { opacity: 0.3; }
+	}
+
+	section {
+		position: relative;
+		height: 450px;
+		width: 100vw;
+		top: 0;
+		background: lightyellow;
+		&.snippets-generator {
+			[codefield] {
+				position: absolute;
+				left: 0%;
+				top: 30%;
+				width: 50%;
+				height: 100%;
+				border: none;
+				font-weight: normal;
+				font-size: 20px;
+				padding: 20px;
+				font-family: 'Roboto Mono';
+				background-color: white;
+				z-index: 1;
+				* {
+					font-family: 'Roboto Mono' !important;
+					font-weight: normal;
+				}
+			}
+			textarea {
+				z-index: 2;
+				opacity: 0.1;
+				outline: none;
+				top: 30%;
+				color: black;
+				background: transparent;
+			}
+			md-screen, {
+				position: absolute;
+				left: 50%;
+				width: 50%;
+				top: 0;
+				font-size: 17px;
+				font-family: 'Roboto Mono';
+				font-weight: normal;
+				height: 100%;
+				background: lightblue;
+				overflow: auto;
+				padding: 20px;
+			}
+			snippet-settings {
+				top: 0;
+				height: 30%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+red { color: #ffb300; }
+yellow { color: #ff5353; }
+purple { color: #42c347; }

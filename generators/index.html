@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Content Generator</title>
-		<link rel="stylesheet" href="src/css/generators.css">
-	</head>
-	<body class="generators">
-		<main>
+<head>
+	<meta charset="utf-8">
+	<title>Content Generator</title>
+	<link rel="stylesheet" href="src/css/generators.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,700" rel="stylesheet">
+</head>
+<body class="generators">
+	<main>
+		<div class="header-options">
 			<h1>Content Generators</h1>
-			
-		</main>
-	</body>
+			<i class="material-icons">arrow_forward</i>
+			<a href="#snippet">Snippets</a>
+			<i class="material-icons">remove</i>
+			<a href="#snippet">Tables</a>
+			<i class="material-icons">remove</i>
+			<a href="#snippet">collapses</a>
+		</div>
+
+		<section class="snippets-generator">
+			<snippet-settingsa>
+				settings
+			</snippet-settings>
+			<pre>
+				<code>
+					<md-mirror codefield></md-mirror>
+				</code>
+			</pre>
+			<pre>
+				<code>
+					<textarea codefield id="snippetGenerator"></textarea>
+				</code>
+			</pre>
+			<pre>
+				<code>
+					<md-screen>
+
+					</md-screen>
+				</code>
+			</pre>
+
+		</section>
+		<script type="text/javascript" src="src/js/snippets-generato.js"></script>
+	</main>
+</body>
 </html>
