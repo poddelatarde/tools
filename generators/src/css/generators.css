@@ -53,19 +53,19 @@ main.outOnFade {
 }
 @keyframes smothBounceShadow {
   from {
-    transform: translateY(0px) scaleX(1.2);
-    opacity: 0.9;
-    filter: blur(4px);
+    transform: translateY(0px) scaleX(1) scaleY(0.2);
+    opacity: 0.6;
+    filter: blur(5px);
   }
   50% {
-    transform: translateY(25px) scaleX(1.2);
-    opacity: 0.5;
-    filter: blur(8px);
+    transform: translateY(25px) scaleX(1) scaleY(0.2);
+    opacity: 0.2;
+    filter: blur(19px);
   }
   to {
-    transform: translateY(0px) scaleX(1.2);
-    opacity: 0.9;
-    filter: blur(4px);
+    transform: translateY(0px) scaleX(1) scaleY(0.2);
+    opacity: 0.6;
+    filter: blur(5px);
   }
 }
 @keyframes blurIn {
@@ -106,15 +106,16 @@ main.outOnFade {
 }
 .generators section {
   position: relative;
-  height: 450px;
+  height: 100vh;
   width: 100vw;
   top: 0;
   background: lightyellow;
 }
 .generators section.snippets-generator [codefield] {
+  white-space: pre-wrap;
   position: absolute;
   left: 0%;
-  top: 30%;
+  top: 50px;
   width: 50%;
   height: 100%;
   border: none;
@@ -150,12 +151,26 @@ main.outOnFade {
   overflow: auto;
   padding: 20px;
 }
-.generators section.snippets-generator snippet-settings {
+.generators section.snippets-generator snippet-settingsa {
   top: 0;
-  height: 30%;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
+  position: relative;
+}
+.generators section.snippets-generator snippet-settingsa input {
+  padding: 5px;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid blue;
+  text-align: center;
 }
 red {
   color: #ffb300;
@@ -165,4 +180,7 @@ yellow {
 }
 purple {
   color: #42c347;
+}
+light {
+  color: #ffd166;
 }

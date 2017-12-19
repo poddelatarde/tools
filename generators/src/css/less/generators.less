@@ -28,15 +28,16 @@
 
 	section {
 		position: relative;
-		height: 450px;
+		height: 100vh;
 		width: 100vw;
 		top: 0;
 		background: lightyellow;
 		&.snippets-generator {
 			[codefield] {
+				white-space: pre-wrap;
 				position: absolute;
 				left: 0%;
-				top: 30%;
+				top: 50px;
 				width: 50%;
 				height: 100%;
 				border: none;
@@ -72,12 +73,26 @@
 				overflow: auto;
 				padding: 20px;
 			}
-			snippet-settings {
+			snippet-settingsa {
 				top: 0;
-				height: 30%;
+				height: 50px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				width: 50%;
+				position: relative;
+				input {
+					padding: 5px;
+					font-size: 24px;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					border: none;
+					border-bottom: 2px solid blue;
+					text-align: center;
+				}
 			}
 		}
 	}
@@ -86,3 +101,4 @@
 red { color: #ffb300; }
 yellow { color: #ff5353; }
 purple { color: #42c347; }
+light { color: lighten(#ffb300, 20%); }

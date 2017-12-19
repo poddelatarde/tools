@@ -30,7 +30,7 @@ main {
 }
 main.outOnFade {
   opacity: 0;
-  transition: 0.5s opacity ease;
+  transition: 0.3s opacity ease;
 }
 @keyframes zoomIn {
   from {
@@ -53,19 +53,19 @@ main.outOnFade {
 }
 @keyframes smothBounceShadow {
   from {
-    transform: translateY(0px) scaleX(1.2);
-    opacity: 0.9;
-    filter: blur(4px);
+    transform: translateY(0px) scaleX(1) scaleY(0.2);
+    opacity: 0.6;
+    filter: blur(5px);
   }
   50% {
-    transform: translateY(25px) scaleX(1.2);
-    opacity: 0.5;
-    filter: blur(8px);
+    transform: translateY(25px) scaleX(1) scaleY(0.2);
+    opacity: 0.2;
+    filter: blur(19px);
   }
   to {
-    transform: translateY(0px) scaleX(1.2);
-    opacity: 0.9;
-    filter: blur(4px);
+    transform: translateY(0px) scaleX(1) scaleY(0.2);
+    opacity: 0.6;
+    filter: blur(5px);
   }
 }
 @keyframes blurIn {
@@ -125,7 +125,7 @@ main.outOnFade {
   top: 52%;
   width: 80px;
   height: 80px;
-  animation-delay: 0.3s;
+  animation-delay: 0.15s;
 }
 .index .option[href=guides] i {
   font-size: 43px;
@@ -149,16 +149,16 @@ main.outOnFade {
 }
 .index .option[href=libraries]::after {
   animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
 }
 .index .option::after {
   position: absolute;
   content: "";
   left: 0;
-  bottom: -140px;
+  bottom: -70px;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: -webkit-linear-gradient(top, black -148%, transparent 45%);
+  background: rgba(0, 0, 0, 0.2);
   transform: inherit;
 }
