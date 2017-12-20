@@ -4,7 +4,6 @@
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-weight: 700;
   font-family: 'Roboto', sans-serif;
 }
 [light] {
@@ -26,7 +25,7 @@ a {
   color: inherit;
 }
 main {
-  animation: 0.7s blurIn ease;
+  animation: 1s blurIn ease;
 }
 main.outOnFade {
   opacity: 0;
@@ -72,7 +71,7 @@ main.outOnFade {
   from {
     opacity: 0;
   }
-  30% {
+  50% {
     opacity: 0;
   }
   to {
@@ -102,25 +101,25 @@ main.outOnFade {
 .index .option i {
   color: white;
 }
-.index .option[href=generators] {
+.index .option[href=libraries] {
   background: -webkit-linear-gradient(71deg, #ffde7b, #FF9800);
   background: -o-linear-gradient(71deg, #ffde7b, #FF9800);
   background: linear-gradient(161deg, #ffde7b, #FF9800);
   left: 60%;
   top: 55%;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
-.index .option[href=generators] i {
+.index .option[href=libraries] i {
   font-size: 43px;
 }
-.index .option[href=generators]::after {
+.index .option[href=libraries]::after {
   animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
 }
 .index .option[href=guides] {
-  background: -webkit-linear-gradient(71deg, #03A9F4, #ef96e8);
-  background: -o-linear-gradient(71deg, #03A9F4, #ef96e8);
-  background: linear-gradient(161deg, #03A9F4, #ef96e8);
+  background: -webkit-linear-gradient(71deg, #03f442, #57a56b);
+  background: -o-linear-gradient(71deg, #03f442, #57a56b);
+  background: linear-gradient(161deg, #03f442, #57a56b);
   left: 37%;
   top: 52%;
   width: 80px;
@@ -134,22 +133,22 @@ main.outOnFade {
   animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
   animation-delay: 0.15s;
 }
-.index .option[href=libraries] {
+.index .option[href=generators] {
   background: -webkit-linear-gradient(341deg, #FF5722, #e91e63);
   background: -o-linear-gradient(341deg, #FF5722, #e91e63);
   background: linear-gradient(71deg, #FF5722, #e91e63);
   left: 47%;
   top: 59%;
-  width: 90px;
-  height: 90px;
-  animation-delay: 0.5s;
+  width: 100px;
+  height: 100px;
+  animation-delay: 0.25s;
 }
-.index .option[href=libraries] i {
+.index .option[href=generators] i {
   font-size: 43px;
 }
-.index .option[href=libraries]::after {
+.index .option[href=generators]::after {
   animation: 3s smothBounceShadow cubic-bezier(0.42, 0, 0.54, 1) infinite;
-  animation-delay: 0.5s;
+  animation-delay: 0.25s;
 }
 .index .option::after {
   position: absolute;
