@@ -4,7 +4,6 @@
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-weight: 700;
   font-family: 'Roboto', sans-serif;
 }
 [light] {
@@ -26,7 +25,7 @@ a {
   color: inherit;
 }
 main {
-  animation: 0.7s blurIn ease;
+  animation: 1s blurIn ease;
 }
 main.outOnFade {
   opacity: 0;
@@ -72,7 +71,7 @@ main.outOnFade {
   from {
     opacity: 0;
   }
-  30% {
+  50% {
     opacity: 0;
   }
   to {
@@ -83,26 +82,16 @@ main.outOnFade {
   background-color: #FFC107;
   color: white;
 }
-.generators .header-options {
-  display: block;
-  width: 100vw;
-  height: 115px;
-  padding: 40px 99px;
-  color: #FFC107;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.settings-icon {
+  position: fixed;
+  z-index: 9999;
+  left: calc(50% - 45px);
+  top: 20px;
+  color: gray;
+  cursor: pointer;
 }
-.generators .header-options h1 {
-  font-size: 37px;
-  font-weight: 300;
-}
-.generators .header-options > i,
-.generators .header-options > a {
-  margin-left: 30px;
-}
-.generators .header-options > i {
-  opacity: 0.3;
+.generators {
+  overflow: hidden;
 }
 .generators section {
   position: relative;
@@ -115,7 +104,7 @@ main.outOnFade {
   white-space: pre-wrap;
   position: absolute;
   left: 0%;
-  top: 50px;
+  top: 0%;
   width: 50%;
   height: 100%;
   border: none;
@@ -153,23 +142,23 @@ main.outOnFade {
 }
 .generators section.snippets-generator snippet-settingsa {
   top: 0;
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   position: relative;
+  background: whitesmoke;
+  box-shadow: 0px -4px 43px -25px black inset;
+  font-family: 'Roboto Mono';
 }
 .generators section.snippets-generator snippet-settingsa input {
-  padding: 5px;
-  font-size: 24px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-bottom: 2px solid blue;
+  font-size: 20px;
+  background: transparent;
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 40px;
+  margin: 0 10px;
   text-align: center;
 }
 red {
