@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
 					} else {
 						this.temp += this.secondProccess.replace(/\$/g, `0${i}`)
 					}
-
 				}
 				if ( this.$qwe > 99 && this.$qwe <= 999 ) {
 
